@@ -24,3 +24,19 @@ document.getElementById('clicked-number').addEventListener('click',function(even
     
 });
 
+function verifyPin()
+{
+    if(document.getElementById('pin-show').value == document.getElementById('clicked-numberShow').value)
+    {
+        document.getElementById('success-msg').style.display='block';
+        document.getElementById('fail-msg').style.display='none';
+        
+    }
+    else{
+        document.getElementById('success-msg').style.display='none';
+        document.getElementById('fail-msg').style.display='block';
+    }
+    document.getElementById('pin-show').value = '';
+    document.getElementById('clicked-numberShow').value = '';
+   
+}
