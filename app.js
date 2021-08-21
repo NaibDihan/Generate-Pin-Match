@@ -11,7 +11,7 @@ document.getElementById('clicked-number').addEventListener('click',function(even
     const numberClicked = event.target.innerText;
     const clickedInput = document.getElementById('clicked-numberShow');
     if(isNaN(numberClicked)){
-        if(numberClicked == 'C');
+        if(numberClicked == 'C')
         {
             clickedInput.value='';
         }
@@ -36,6 +36,7 @@ function verifyPin()
         document.getElementById('success-msg').style.display='none';
         document.getElementById('fail-msg').style.display='block';
     }
+    
     document.getElementById('pin-show').value = '';
     document.getElementById('clicked-numberShow').value = '';
    
